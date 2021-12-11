@@ -1,0 +1,13 @@
+server:
+  type: default
+  maxThreads: 1024
+
+database:
+  driverClass: org.hsqldb.jdbc.JDBCDriver
+  user: sa
+  password: sa
+  url: jdbc:hsqldb:mem:myDb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=TRUE;
+  validationQuery: CALL NOW()
+  initializationQuery: CREATE TABLE IF NOT EXISTS TASK (id IDENTITY, description VARCHAR(255) NOT NULL, taskDate DATE NOT NULL)
+  properties:
+    hibernate.dialect: org.hibernate.dialect.HSQLDialect
