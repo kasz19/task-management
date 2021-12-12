@@ -18,7 +18,9 @@ The current project consists in 5 classes:
 The unit tests are under the folder src/test/*.
 
 About the database: We have chosen an hsqldb memory database. To modify this, generating a new file of 
-configuration for the application should be enough (application-config.yaml)
+configuration for the application should be enough (application-config.yaml).
+
+In order to enable local testing, CORS requests have been enabled (So it is possible to invoke from the front-end to this application)
 
 ## Available Scripts
 
